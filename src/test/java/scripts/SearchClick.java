@@ -30,7 +30,7 @@ public class SearchClick extends commonLib {
 	sendkeys(googlesearch.txtbox_searchText, hm.get("scriteria"));
 	enter(googlesearch.txtbox_searchText);
 	
-	// validate number of search result
+	// validate number of search results
 	if((googlesearch.sresult(driver))>Integer.parseInt(hm.get("result").replaceAll(".0",""))){
 		startTest.log(LogStatus.PASS, "Result should be greater than 100", " Results as expected");
 		}else {
